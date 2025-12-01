@@ -34,23 +34,5 @@ int main() {
 	}
 
 
-	int lanzarDado(int carasDado = CARAS_DADO) {
-
-		return 1 + rand() % carasDado;
-
-	}
-
-	void imprimirtablero(tablero[CASILLAS_TOTALES], int pos1, int pos2) {
-
-		for (int i = 0; i < CASILLAS_TOTALES; i++)
-		{
-			std::cout << "*" << ;
-		}
-
-	}
-
-	imprimirtablero(tablero, pos1, pos2);
-
-
 	return 0;
 }
