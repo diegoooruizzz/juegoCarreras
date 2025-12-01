@@ -27,16 +27,25 @@ int main() {
 
 	for (int i = 0; i < CASILLAS_TOTALES; i++)
 	{
-		std::cout << tablero[i] << "[ ]";
+		 tablero[i] = '.';
+
+	}
+	for (int i = 0; i < CASILLAS_TOTALES; i++)
+	{
+		std::cout<< "[" << tablero[i]  << "]";
 		
 	}
 
 	std::cout << std::endl;
 	std::cout << std::endl;
 
+	int dado2 = 1 + rand() % 6;
+
+	std::cout << "Dado: " << dado2 << std::endl;
+
 	for ( int j = 0; j < CASILLAS_TOTALES; j++)
 	{
-		std::cout << tablero[j] << "[ ]";
+		std::cout<< "[" << tablero[j] << "]";
 	}
 	
 
