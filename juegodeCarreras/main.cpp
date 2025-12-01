@@ -1,5 +1,5 @@
 #include <iostream>
-#define CASILLAS_TOTALES 50
+#define CASILLAS_TOTALES 30
 #define CARAS_DADO 6
 #include <ctime>
 #include <cstdlib>
@@ -13,6 +13,7 @@ enum  PlayerTurn
 int pos1 = 0;
 int pos2 = 0;
 
+
 int main() {
 
 
@@ -23,6 +24,21 @@ int main() {
 	std::cout <<"Dado: " << dado << std::endl;
 
 	char tablero[CASILLAS_TOTALES];
+
+	for (int i = 0; i < CASILLAS_TOTALES; i++)
+	{
+		std::cout << tablero[i] << "[ ]";
+		
+	}
+
+	std::cout << std::endl;
+	std::cout << std::endl;
+
+	for ( int j = 0; j < CASILLAS_TOTALES; j++)
+	{
+		std::cout << tablero[j] << "[ ]";
+	}
+	
 
 	bool GameOver = false;
 	PlayerTurn playerTurn = PLAYER_1;
