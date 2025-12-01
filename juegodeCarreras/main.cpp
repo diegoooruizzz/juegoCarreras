@@ -1,8 +1,9 @@
 #include <iostream>
+#define CASILLAS_TOTALES 50
 
 int main() {
 
-	std::cout << "Hello World";
+char tablero [CASILLAS_TOTALES]
 
 	return 0;
 }
