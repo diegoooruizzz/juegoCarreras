@@ -1,5 +1,7 @@
 #include <iostream>
 #define CASILLAS_TOTALES 50
+#include <ctime>
+#include <cstdlib>
 
 enum  PlayerTurn
 {
@@ -8,7 +10,17 @@ enum  PlayerTurn
 };
 
 
+
+
+
 int main() {
+
+
+	srand(time(NULL));
+
+	int dado = 1 + rand() % 6;
+
+	std::cout <<"Dado: " << dado << std::endl;
 
 	char tablero[CASILLAS_TOTALES];
 
