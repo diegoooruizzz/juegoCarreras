@@ -1,5 +1,6 @@
 #include <iostream>
 #define CASILLAS_TOTALES 50
+#define CARAS_DADO 6
 #include <ctime>
 #include <cstdlib>
 
@@ -9,9 +10,8 @@ enum  PlayerTurn
 	PLAYER_2,
 };
 
-
-
-
+int pos1 = 0;
+int pos2 = 0;
 
 int main() {
 
@@ -33,6 +33,24 @@ int main() {
 
 	}
 
-	std::cout << "Hello World!";
+
+	int lanzarDado(int carasDado = CARAS_DADO) {
+
+		return 1 + rand() % carasDado;
+
+	}
+
+	void imprimirtablero(tablero[CASILLAS_TOTALES], int pos1, int pos2) {
+
+		for (int i = 0; i < CASILLAS_TOTALES; i++)
+		{
+			std::cout << "*" << ;
+		}
+
+	}
+
+	imprimirtablero(tablero, pos1, pos2);
+
+
 	return 0;
 }
